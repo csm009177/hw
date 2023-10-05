@@ -24,8 +24,8 @@ const serv = http.createServer(function(request, response){
   </html>`
 
   if(request==="/"){
-    response.writeHead(200, {"Content-Type" : "text/html"});
-    response.end(hw);
+    response.writeHead(200, {"Content-Type" : "text/html"})
+    response.end(hw)
   }
 });
 
