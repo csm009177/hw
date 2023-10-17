@@ -24,10 +24,9 @@ let sofia = docMaker(PORT, 'sofia', 'main');
 });
 
 
-
-serv.listen(PORT, () => {
-  console.log(`
-now server is working
-please request with this link(Clt + click)
-http://localhost:${PORT}`)
+  serv.listen(PORT, () => {
+    console.log(`
+  now server is working
+  please request with this link(Clt + click)
+  http://localhost:${PORT}`)
 }) 
