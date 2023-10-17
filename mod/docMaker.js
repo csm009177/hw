@@ -16,8 +16,10 @@ return `<!DOCTYPE html>
   </html>`;
 
   /**
-   * @param {number} PORT port number
+   * @param {number, string} PORT port number
    * @param {string} pageName this page name 
    * @param {string} subPage sub page name
    */
 }
+
+module.exports = docMaker;

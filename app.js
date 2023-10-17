@@ -1,12 +1,14 @@
 const http = require('http');
 const fs = require('fs');
+const path = require('path');
+
 let contenType = require('./mod/contenType.js');
 let docMaker = require('./mod/docMaker.js');
-let PORT = 2020
+let PORT = 2020;
 let serv = http.createServer(function(request, response){
   // doc make
-let main = docMaker()
-
+let main = docMaker(PORT, 'main', 'sofia'); // 문제
+let sofia = docMaker(PORT, 'sofia', 'main');
 
   // main page
   // check mothod 
