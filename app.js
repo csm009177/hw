@@ -15,7 +15,7 @@ let serv = http.createServer(function(request, response){
   <body>
   <div id="root">
     <h1>Welcome to main</h1>
-    <div><a href="http://localhost:${PORT}/sofia"></a></div>
+    <div><a href="http://localhost:${PORT}/sofia">sofia</a></div>
     </div>
     </body>
     </html>`
