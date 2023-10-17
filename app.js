@@ -16,11 +16,15 @@ let sofia = docMaker(PORT, 'sofia', 'main');
     // err find
     response.writeHead(200, contenType)
     response.end(main);
-    } else if(request.method==='GET' && request.url=== '/sofia'){
-      // err find
-      response.writeHead(200, contenType)
-      response.end(sofia);
-      };
+  } else if(request.method==='GET' && request.url=== '/main'){
+    // err find
+    response.writeHead(200, contenType)
+    response.end(main);
+  } else if(request.method==='GET' && request.url=== '/sofia'){
+    // err find
+    response.writeHead(200, contenType)
+    response.end(sofia);
+  };
 });
 
 
