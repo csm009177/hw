@@ -9,7 +9,7 @@ const serv = http.createServer((req, res)=> {
     console.log(req.url);
     res.writeHead(200, contenType);
     res.end('doc');
-  } else if( console.log('bye'))
+  } else( console.log('bye'))
 })
 
 serv.listen(2316, ()=>{
