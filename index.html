@@ -2,46 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>main</title>
+  <style>*{margin:0;padding:0;box-sizing:border-box;
+  background-color: black; color: white;}
+  #root { width: 100vw; height: 100vh;}
+  #root>div {background-color:green; width:10vh; height:10vh;}
+  </style>
 </head>
 <body>
-  <button id="btn">
-  button
-  </button>
-  <script>  
-  let button = document.getElementById("btn")
-  const http = require('http');
-  button.addEventListener("click", function(){
-  const server = http.createServer(function(request, response) {
-  // console.log(request);
-  // console.log(typeof(response));
-  let main = `<!DOCTYPE html>
-  <html lang="en">
-  <head> <title>main</title>
-  </head>  
-  <body>  
-  <a href="http://localhost:1234/sub">sub</a>
-  </body>  </html>`
+  <div id="root">
+    <div id="cont"></div>
+  </div>
+  <script>
+    let root = document.getElementById('root');
+    let cont = document.getElementById('cont');
+    let handle = true;
+    cont.addEventListener('click', ()=>{
+      if(root.style.backgroundColor==="black"){
+      root.style.backgroundColor = "white";
+    } else {root.style.backgroundColor = "black" }
+    })
 
-  let sub = `<!DOCTYPE html>
-  <html lang="en">
-  <head> <title>main</title>
-  </head>  <body>  <a href="http://localhost:1234">main</a>  </body>  </html>`
-
-if(request.url==="/"){
-  response.writeHead(200, {"Content-Type": "text/html"})
-  response.end(main);
-}
-  if(request.url==="/sub") {
-    response.writeHead(200, {"Content-Type": "text/html"})
-    response.end(sub);
-  }
-});
-
-server.listen(1234);
-})
   </script>
 </body>
 </html>
