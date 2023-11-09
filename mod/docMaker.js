@@ -1,4 +1,4 @@
-function docMaker(PORT, pageName, subPage){
+export function docMaker(PORT, pageName, subPage){
 return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,5 +21,3 @@ return `<!DOCTYPE html>
    * @param {string} subPage sub page name
    */
 }
-
-module.exports = docMaker;
